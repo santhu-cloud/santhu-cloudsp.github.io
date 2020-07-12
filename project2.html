@@ -1,0 +1,718 @@
+<html>
+<head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Project 2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <Link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <style>
+      nav {
+       float: left;
+       width: 20%;
+       height: 600px;
+       background:PaleGreen;
+       margin-left:80px;
+       padding: 20px;
+       border-radius: 25px;
+       border: 2px solid #fff;
+          }
+     .row{
+      margin-right:50px;
+      margin-bottom:30px;
+     }
+nav ul {
+	  margin-left:20px;
+      list-style-type: none;
+      padding: 0;
+	  color:white;
+     }
+	 nav ul li{
+	 font-size:20px;
+	 }
+	 .img{
+	 margin-left:10px;
+	 margin-top:5px;
+	 margin-bottom:15px;
+	 }
+	 .name{
+	 color:white;
+	 font-size:30px;
+	 margin-left:10px;
+	 }
+	  .name1{
+	 color:white;
+	 font-size:15px;
+	 margin-left:10px;
+	 }
+	 .social-icons{
+margin-left:10px;
+letter-spacing:5px;
+}
+ .jumbotron{
+margin:0;
+margin-left:380px;
+margin-right:80px;
+height:600px;
+background-color:LightGreen;
+margin-top:30px;
+ border-radius: 25px;
+  border: 2px solid #fff;
+  }
+ .header{
+  margin-top:150px;
+  margin-left:-70px;
+  color:white;
+  font-size:60px;
+  }
+.paragraph{
+margin-left:170px;
+font-size:15px;
+color:white;
+}
+.btn{
+margin-left:170px;
+border-radius: 25px;
+font-size:20px;
+  border: 2px solid #fff;
+  background-color:aquamarine;
+  color:white;
+  }
+   .jumbotron1{
+  margin:0;
+margin-left:380px;
+margin-right:80px;
+height:500px;
+background-color:Aliceblue;
+margin-top:30px;
+ border-radius: 25px;
+  border: 2px solid #fff;
+  }
+  hr.new1{
+    border: 2px solid PaleGreen;
+	width:25px;
+	margin-left:50px;
+  }
+  .about{
+  margin-left:50px;
+  margin-top:60px;
+  font-size:30px;
+  }
+  .about img{
+  margin-left:20px;
+  }
+  .message{
+  margin-left:220px;
+  margin-top:-150px;
+  font-size:30px;
+  }
+  .para{
+  font-size:15px;
+  opacity:0.5;
+  }
+  .sname{
+  font-size:15px;
+  opacity:0.5;
+  }
+  .span{
+    font-size:15px;
+  opacity:0.5;
+  margin-left:220px;
+  margin-top:-45px;
+}
+  .btn1{
+  margin-left:5px;
+border-radius: 25px;
+font-size:20px;
+  border: 2px solid #fff;
+  background-color:aquamarine;
+  color:white;
+  }
+  .btn2{
+  margin-left:5px;
+border-radius: 25px;
+font-size:20px;
+  border: 2px solid #fff;
+  background-color:aquamarine;
+  color:white;
+  }
+  .jumbotron2{
+   margin:0;
+margin-left:380px;
+margin-right:80px;
+height:700px;
+background-color:Aliceblue;
+margin-top:30px;
+ border-radius: 25px;
+  border: 2px solid #fff;
+  }
+  .skills{
+  margin-left:50px;
+  margin-top:60px;
+  font-size:30px;
+  }
+ .skill-name{
+font-size:18px;
+font-weight:700;
+text-transform:uppercase;
+margin:20px 0;
+}
+.skill-bar{
+height:20px;
+background:#cacaca;
+border-radius:8px;
+margin-right:30px;
+}
+.skill-per{
+height:20px;
+background-color:#0fbcf9;
+border-radius:8px;
+width:50%;
+transition:1s linear;
+position:relative;
+}
+.skill-per::before{
+content: attr(per);
+position:absolute;
+padding:4px 6px;
+background-color:#000;
+color:#fff;
+font-size:12px;
+border-radius:4px;
+top:-35px;
+right:0;
+transform:translateX(50%);
+}
+.skill-per::after{
+content:"";
+position:absolute;
+width:10px;
+height:10px;
+background-color:#000;
+top=-16px;
+right: 0;
+transform:translateX(50%) rotate(45deg);
+border-radius:2px;
+}
+.jumbotron3{
+ margin:0;
+margin-left:380px;
+margin-right:80px;
+height:700px;
+background-color:Aliceblue;
+margin-top:30px;
+ border-radius: 25px;
+  border: 2px solid #fff;
+}
+.flip-card {
+margin-left:50px;
+  background-color: transparent;
+  width:300px;
+  height:200px;
+  border: 2px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+.flip-card1{
+margin-left:50px;
+  background-color: transparent;
+  width:300px;
+  height:200px;
+  border: 2px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+.flip-card2{
+margin-top:-425px;
+margin-left:450px;
+  background-color: transparent;
+  width:300px;
+  height:200px;
+  border: 2px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+.flip-card3{
+margin-top:25px;
+margin-left:450px;
+  background-color: transparent;
+  width:300px;
+  height:200px;
+  border: 2px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card-inner1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-inner2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-inner3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card1:hover .flip-card-inner1 {
+  transform: rotateY(180deg);
+}
+.flip-card2:hover .flip-card-inner2 {
+  transform: rotateY(180deg);
+}.flip-card3:hover .flip-card-inner3 {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #fff;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+.jumbotron4{
+ margin:0;
+margin-left:380px;
+margin-right:80px;
+height:600px;
+background-color:Aliceblue;
+margin-top:30px;
+ border-radius: 25px;
+  border: 2px solid #fff;
+}
+.jumbotron5{
+ margin:0;
+margin-left:380px;
+margin-right:80px;
+height:800px;
+background-color:Aliceblue;
+margin-top:30px;
+ border-radius: 25px;
+  border: 2px solid #fff;
+}
+.jumbotron6{
+ margin:0;
+margin-left:380px;
+margin-right:80px;
+height:600px;
+background-color:Aliceblue;
+margin-top:30px;
+ border-radius: 25px;
+  border: 2px solid #fff;
+}
+.phone{
+margin-left:20px;
+font-size:20px;
+}
+.phone1{
+margin-left:80px;
+opacity:0.5;
+}
+.email{
+margin-left:10px;
+font-size:20px;
+}
+.email1{
+margin-left:80px;
+opacity:0.5;
+}
+.loc{
+margin-left:20px;
+font-size:20px;
+}
+.loc1{
+margin-left:80px;
+opacity:0.5;
+}
+.identity{
+margin-left:300px;
+margin-top:-230px;
+ border-radius: 55px;
+  border: 4px solid #fff;
+}
+#eaddress{
+margin-left:550px;
+margin-top:-230px;
+ border-radius: 55px;
+  border: 4px solid #fff;
+}
+#sub{
+margin-left:300px;
+margin-top:-150px;
+ border-radius: 55px;
+  border: 4px solid #fff;
+  width:49%;
+  }
+  #msg{
+  width:49%;
+  margin-left:300px;
+  margin-top:-80px;
+   border-radius: 55px;
+  border: 2px solid #fff;
+  }
+  .btn3{
+  margin-left:300px;
+    border-radius: 55px;
+  border: 2px solid #fff;
+  background-color:aquamarine;
+  color:white;
+  }
+  .btn4{
+    margin-left:50px;
+    border-radius: 55px;
+  border: 2px solid #fff;
+  background-color:aquamarine;
+  color:white;
+  }
+  .btn5{
+    margin-left:50px;
+    border-radius: 55px;
+border:2px solid #fff;
+  background-color:aquamarine;
+  color:white;
+  }
+  .btn6{
+    margin-left:50px;
+    border-radius: 55px;
+border:2px solid #fff;
+  background-color:aquamarine;
+  color:white;
+  }
+  .btn7{
+    margin-left:50px;
+    border-radius: 55px;
+border:2px solid #fff;
+  background-color:aquamarine;
+  color:white;
+  }
+  .btn8{
+    margin-left:50px;
+    border-radius: 55px;
+border:2px solid #fff;
+  background-color:aquamarine;
+  color:white;
+  }
+   .btn9{
+    margin-left:350px;
+    border-radius: 55px;
+border:2px solid #fff;
+  background-color:aquamarine;
+  color:white;
+  }
+  .vl {
+  margin-left:300px;
+  border-left: 2px solid green;
+  height: 400px;
+}
+.exp{
+margin-top:-350px;
+margin-left:150px;
+}
+.exp1{
+margin-top:-50px;
+margin-left:350px;
+font-size:25px;
+}
+.expe{
+margin-left:150px;
+}
+.expe1{
+margin-left:350px;
+font-size:25px;
+margin-top:-45px;
+}
+.exper{
+margin-left:150px;
+}
+.exper1{
+margin-left:350px;
+font-size:25px;
+margin-top:-45px;
+}
+  </style>
+</head>
+<body>
+<section>
+<nav>
+<div class="img"><img src="C:\Users\santhosh\Downloads\priyanka hs\priyanka hs\images\logo.png"></div>
+<h1 class="name">Santhosh S.</h1>
+<h2 class="name1">WEB DEVELOPER</h2>
+<br>
+<br>
+<ul>
+<li><a href="#home"><i class="fa fa-home">  Home</i></a></li>
+<li><a href="#about"><i class="fa fa-user">  About</i></a></li>
+<li><a href="#services"><i class="fa fa-briefcase">  Services</i></a></li>
+<li><a href="#resume"><i class="fa fa-file-code-o">  Resume</i></a></li>
+<li><a href="#blog"><i class="fa fa-rss">  Blog</i></a></li>
+<li><a href="#contact"><i class="fa fa-phone">  Contact</i></a></li>
+</ul>
+<br><br>
+<label class="social-icons">
+<i class="fa fa-facebook-square" style=font-size:20px;></i>
+<i class="fa fa-twitter-square" style=font-size:20px;></i>
+<i class="fa fa-instagram" style=font-size:20px;></i>
+<i class="fa fa-youtube-square" style=font-size:20px;></i>
+<i class="fa fa-dribbble" style=font-size:20px;></i>
+</label>
+<br>
+<span class="copyright">@ 2020 santhosh  Resume</span>
+</nav>
+</section>
+<div class="jumbotron">
+  <h1 align="center" class="header">I'm Santhosh S.</h1>
+  <p class="paragraph">He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p> 
+  <button type="button" class="btn" value="Hire Me"><i class="fa fa-envelope"></i> Hire Me</button>
+</div>
+<br>
+<div class="jumbotron1">
+  <h1 class="about">About Me</h1>
+  <hr class="new1"></hr>
+<br>
+<div class="about img">
+<img src="C:\Users\santhosh\Downloads\priyanka hs\priyanka hs\images\about.png">
+<div class="message">
+<h1>Hello,</h1>
+<p class="para">I am Santhosh S, web developer from bangalore,I have rich experience in web site design and building and customization, also I am good at wordpress.</p>
+<span class="sname">Name:<b>Santhosh S</b></span><br>
+<span class="sname">Birthday:<b>3rd july 1999</b></span><br>
+<div class="span">
+<span>location:<b>Jalahalli cross</b></span><br>
+<span>E-mail:<b>santhoshnaidu257@gmail.com</b></span>
+</div>
+<br>
+ <button type="button" class="btn1" value="Hire Me"><i class="fa fa-cloud-download"></i> Download CV</button>
+  <button type="button" class="btn2" value="Hire Me"><i class="fa fa-envelope"></i> Hire Me</button>
+</div>
+</div>
+</div>
+<br>
+<div class="jumbotron2">
+<h1 class="skills">My Skills</h1>
+ <hr class="new1"></hr>
+<br>
+<div class="skills">
+<div class="skill">
+<div class="skill-name">HTML 5</div>
+<div class="skill-bar">
+<div class="skill-per" per="50"></div>
+</div>
+</div>
+<div class="skill">
+<div class="skill-name">CSS 3</div>
+<div class="skill-bar">
+<div class="skill-per" per="50"></div>
+</div>
+</div>
+<div class="skill">
+<div class="skill-name">JavaScript</div>
+<div class="skill-bar">
+<div class="skill-per" per="50"></div>
+</div>
+</div>
+<div class="skill">
+<div class="skill-name">PHP</div>
+<div class="skill-bar">
+<div class="skill-per" per="50"></div>
+</div>
+</div>
+<div class="skill">
+<div class="skill-name">AJAX</div>
+<div class="skill-bar">
+<div class="skill-per" per="50"></div>
+</div>
+</div>
+</div>
+</div>
+<br>
+<div class="jumbotron3">
+  <h1 class="skills">Services</h1>
+   <hr class="new1"></hr>
+  <br><br>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+	<br>
+	<br>
+        <i class="fa fa-globe" style=font-size:30px;color:red;></i><br><br><br>
+      <p>Development</p>
+    </div>
+    <div class="flip-card-back">
+       <img src="C:\Users\santhosh\Downloads\development.jpg" alt="Development" style="width:300px;height:200px;">
+    </div>
+  </div>
+</div>
+<br>
+<div class="flip-card1">
+  <div class="flip-card-inner1">
+    <div class="flip-card-front">
+	<br>
+	<br>
+        <i class="fa fa-dashboard" style=font-size:30px;color:red;></i><br><br><br>
+      <p>Design</p>
+    </div>
+    <div class="flip-card-back">
+       <img src="C:\Users\santhosh\Downloads\design.jpg" alt="Design" style="width:300px;height:200px;">
+    </div>
+  </div>
+</div>
+<div class="flip-card2">
+  <div class="flip-card-inner2">
+    <div class="flip-card-front">
+	<br>
+	<br>
+        <i class="fa fa-rocket" style=font-size:30px;color:red;></i><br><br><br>
+      <p>SEO</p>
+    </div>
+    <div class="flip-card-back">
+       <img src="C:\Users\santhosh\Downloads\seo.jpg" alt="seo" style="width:300px;height:200px;">
+    </div> 
+  </div>
+</div>
+<div class="flip-card3">
+  <div class="flip-card-inner3">
+    <div class="flip-card-front">
+	<br>
+	<br>
+        <i class="fa fa-comment-o" style=font-size:30px;color:red;></i><br><br><br>
+      <p>Support</p>
+    </div>
+    <div class="flip-card-back">
+       <img src="C:\Users\santhosh\Downloads\support.jpg" alt="support" style="width:300px;height:200px;">
+    </div>
+  </div>
+</div>
+</div>
+<br>
+<div class="jumbotron4">
+  <h1 class="skills">Experience</h1>
+     <hr class="new1"></hr>
+	 <br>
+	 <div class="vl"></div>
+	 <p class="exp">2020-Present</p>
+	 <h1 class="exp1">Academic Degree</h1>
+<br>
+<br>
+<br>
+<br>
+ <p class="expe">2018-2015</p>
+ 	 <h1 class="expe1">Bachelor Degree</h1>
+	 <br>
+	 <br>
+	 <br>
+	 <br>
+	 <p class="exper">2015-2012</p>
+	 <h1 class="exper1">Honours Degree</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="jumbotron5">
+  <h1 class="skills">Portfolio</h1>
+ <hr class="new1"></hr>
+ <br>
+ <br>
+ <button type="button" class="btn4"><a>All Projects</a></button>
+  <button type="button" class="btn5"><a>Branding</a></button>
+  <button type="button" class="btn6"><a>Creative</a></button>
+  <button type="button" class="btn7"><a>Design</a></button>
+   <button type="button" class="btn8"><a>Video</a></button>
+ <br>
+ <br>
+ <br>
+ <img src="C:\Users\santhosh\AppData\Local\Temp\Temp1_priyanka hs.zip\priyanka hs\images\portfolio\1.jpg" width="200px" height="200px" style= margin-left:60px;>
+ <img src="C:\Users\santhosh\AppData\Local\Temp\Temp1_priyanka hs.zip\priyanka hs\images\portfolio\2.jpg" width="200px" height="200px" style=margin-left:60px;>
+ <img src="C:\Users\santhosh\AppData\Local\Temp\Temp1_priyanka hs.zip\priyanka hs\images\portfolio\3.jpg" width="200px" height="200px" style=margin-left:60px;><br>
+ <br>
+ <br>
+  <img src="C:\Users\santhosh\AppData\Local\Temp\Temp1_priyanka hs.zip\priyanka hs\images\portfolio\4.jpg" width="200px" height="200px" style=margin-left:60px;>
+  <img src="C:\Users\santhosh\AppData\Local\Temp\Temp1_priyanka hs.zip\priyanka hs\images\portfolio\5.jpg" width="200px" height="200px" style=margin-left:60px;>
+  <img src="C:\Users\santhosh\AppData\Local\Temp\Temp1_priyanka hs.zip\priyanka hs\images\portfolio\6.jpg" width="200px" height="200px" style=margin-left:60px;>
+ <br>
+ <br>
+ <button type="button" class="btn9"><a>Load More</a></button>
+ </div>
+<br>
+<br>
+<div class="jumbotron6">
+  <p class="skills">Get In Touch</p>
+   <hr class="new1"></hr>
+  <br>
+  <br>
+  <br>
+  <br>
+  <i class="fa fa-phone" style=font-size:30px;color:red;margin-left:40px;></i>
+  <label class="phone"><b>Phone</b></label><br><span class="phone1">+91 9742227488</span>
+  <br>
+  <br>
+    <i class="fa fa-envelope-o" style=font-size:30px;color:red;margin-left:40px;></i>
+  <label class="email"><b>Email address</b></label><br><span class="email1">santhoshnaidu257@gmail</span>
+  <br>
+  <br>
+  <i class="fa fa-map-marker" style=font-size:30px;color:red;margin-left:40px;></i>
+  <label class="loc"><b>Location</b></label><br><span class="loc1">Bangalore</span>
+  <div class="form">
+<input type="text" value="Your Name" class="identity" id="name"><br>
+<input type="text" value="Email address" id="eaddress">
+<input type="text" value="Subject" id="sub">
+<textarea rows="4" column="7" value="Message" id="msg">    Message</textarea>
+<span align="right">Send Message</span>
+<br>
+<br>
+  <button type="button" class="btn3" value="Send Message"><i class="fa fa-paper-plane"></i> Send Message</button>
+  </div>
+</div>
+</body>
+</html>
